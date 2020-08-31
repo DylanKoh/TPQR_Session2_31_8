@@ -45,6 +45,14 @@
             this.nudQuantity = new System.Windows.Forms.NumericUpDown();
             this.label6 = new System.Windows.Forms.Label();
             this.btnBook = new System.Windows.Forms.Button();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudBudget)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -140,13 +148,25 @@
             this.cbTier.Name = "cbTier";
             this.cbTier.Size = new System.Drawing.Size(220, 33);
             this.cbTier.TabIndex = 11;
+            this.cbTier.SelectedIndexChanged += new System.EventHandler(this.cbTier_SelectedIndexChanged);
             // 
             // nudBudget
             // 
+            this.nudBudget.Increment = new decimal(new int[] {
+            500,
+            0,
+            0,
+            0});
             this.nudBudget.Location = new System.Drawing.Point(298, 206);
+            this.nudBudget.Maximum = new decimal(new int[] {
+            1410065408,
+            2,
+            0,
+            0});
             this.nudBudget.Name = "nudBudget";
             this.nudBudget.Size = new System.Drawing.Size(120, 32);
             this.nudBudget.TabIndex = 12;
+            this.nudBudget.ValueChanged += new System.EventHandler(this.nudBudget_ValueChanged);
             // 
             // cbOnline
             // 
@@ -157,6 +177,7 @@
             this.cbOnline.TabIndex = 13;
             this.cbOnline.Text = "Online";
             this.cbOnline.UseVisualStyleBackColor = true;
+            this.cbOnline.CheckedChanged += new System.EventHandler(this.cbOnline_CheckedChanged);
             // 
             // cbFlyer
             // 
@@ -167,6 +188,7 @@
             this.cbFlyer.TabIndex = 14;
             this.cbFlyer.Text = "Flyer";
             this.cbFlyer.UseVisualStyleBackColor = true;
+            this.cbFlyer.CheckedChanged += new System.EventHandler(this.cbFlyer_CheckedChanged);
             // 
             // cbBanner
             // 
@@ -177,10 +199,24 @@
             this.cbBanner.TabIndex = 15;
             this.cbBanner.Text = "Banner";
             this.cbBanner.UseVisualStyleBackColor = true;
+            this.cbBanner.CheckedChanged += new System.EventHandler(this.cbBanner_CheckedChanged);
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4,
+            this.Column5,
+            this.Column6,
+            this.Column7,
+            this.Column8});
             this.dataGridView1.Location = new System.Drawing.Point(12, 294);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
@@ -212,6 +248,71 @@
             this.btnBook.TabIndex = 19;
             this.btnBook.Text = "Book";
             this.btnBook.UseVisualStyleBackColor = true;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "packageId";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            this.Column1.Visible = false;
+            this.Column1.Width = 125;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Tier";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            this.Column2.Width = 80;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Name";
+            this.Column3.MinimumWidth = 6;
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            this.Column3.Width = 99;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Value ($)";
+            this.Column4.MinimumWidth = 6;
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            this.Column4.Width = 124;
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Available Qty";
+            this.Column5.MinimumWidth = 6;
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            this.Column5.Width = 161;
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "Online";
+            this.Column6.MinimumWidth = 6;
+            this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
+            this.Column6.Width = 107;
+            // 
+            // Column7
+            // 
+            this.Column7.HeaderText = "Flyer";
+            this.Column7.MinimumWidth = 6;
+            this.Column7.Name = "Column7";
+            this.Column7.ReadOnly = true;
+            this.Column7.Width = 92;
+            // 
+            // Column8
+            // 
+            this.Column8.HeaderText = "Banner";
+            this.Column8.MinimumWidth = 6;
+            this.Column8.Name = "Column8";
+            this.Column8.ReadOnly = true;
+            this.Column8.Width = 114;
             // 
             // BookPackages
             // 
@@ -267,5 +368,13 @@
         private System.Windows.Forms.NumericUpDown nudQuantity;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btnBook;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
     }
 }
