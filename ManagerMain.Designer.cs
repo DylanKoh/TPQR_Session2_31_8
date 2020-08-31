@@ -69,7 +69,7 @@
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.Location = new System.Drawing.Point(754, 35);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(231, 29);
+            this.label1.Size = new System.Drawing.Size(189, 23);
             this.label1.TabIndex = 0;
             this.label1.Text = "ASEAN Skills 2020\r\n";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -122,6 +122,7 @@
             this.btnViewSummary.TabIndex = 13;
             this.btnViewSummary.Text = "View Sponsorship Summary";
             this.btnViewSummary.UseVisualStyleBackColor = true;
+            this.btnViewSummary.Click += new System.EventHandler(this.btnViewSummary_Click);
             // 
             // label2
             // 
@@ -129,13 +130,13 @@
             this.label2.Font = new System.Drawing.Font("Verdana", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(339, 108);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(357, 29);
+            this.label2.Size = new System.Drawing.Size(287, 23);
             this.label2.TabIndex = 14;
             this.label2.Text = "Sponsor Manager Main Menu";
             // 
             // ManagerMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(995, 543);
             this.Controls.Add(this.label2);

@@ -44,5 +44,12 @@ namespace TPQR_Session2_31_8
             (new ApproveBookings()).ShowDialog();
             Close();
         }
+
+        private void btnViewSummary_Click(object sender, EventArgs e)
+        {
+            Hide();
+            (new ViewSummary()).ShowDialog();
+            Close();
+        }
     }
 }

@@ -44,6 +44,7 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -141,6 +142,12 @@
     <Compile Include="ViewPackages.Designer.cs">
       <DependentUpon>ViewPackages.cs</DependentUpon>
     </Compile>
+    <Compile Include="ViewSummary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewSummary.Designer.cs">
+      <DependentUpon>ViewSummary.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AddPackages.resx">
       <DependentUpon>AddPackages.cs</DependentUpon>
     </EmbeddedResource>
@@ -176,6 +183,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ViewPackages.resx">
       <DependentUpon>ViewPackages.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewSummary.resx">
+      <DependentUpon>ViewSummary.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
