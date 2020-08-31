@@ -48,7 +48,7 @@ namespace TPQR_Session2_31_8
                         {
                             if (getUser.userTypeIdFK == 1)
                             {
-                                MessageBox.Show($"Welcom {getUser.name}!", "Login", MessageBoxButtons.OK,
+                                MessageBox.Show($"Welcome {getUser.name}!", "Login", MessageBoxButtons.OK,
                        MessageBoxIcon.Information);
                                 Hide();
                                 (new ManagerMain()).ShowDialog();
@@ -56,7 +56,7 @@ namespace TPQR_Session2_31_8
                             }
                             else if (getUser.userTypeIdFK == 2)
                             {
-                                MessageBox.Show($"Welcom {getUser.name}!", "Login", MessageBoxButtons.OK,
+                                MessageBox.Show($"Welcome {getUser.name}!", "Login", MessageBoxButtons.OK,
                        MessageBoxIcon.Information);
                                 Hide();
                                 (new SponsorMain(getUser)).ShowDialog();
