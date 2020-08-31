@@ -25,5 +25,10 @@ namespace TPQR_Session2_31_8
             (new SponsorMain(_user)).ShowDialog();
             Close();
         }
+
+        private void BookPackages_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
