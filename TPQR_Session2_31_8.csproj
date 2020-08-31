@@ -61,6 +61,12 @@
     <Compile Include="AddPackages.Designer.cs">
       <DependentUpon>AddPackages.cs</DependentUpon>
     </Compile>
+    <Compile Include="ApproveBookings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApproveBookings.Designer.cs">
+      <DependentUpon>ApproveBookings.cs</DependentUpon>
+    </Compile>
     <Compile Include="Benefit.cs">
       <DependentUpon>Session2Model.tt</DependentUpon>
     </Compile>
@@ -137,6 +143,9 @@
     </Compile>
     <EmbeddedResource Include="AddPackages.resx">
       <DependentUpon>AddPackages.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ApproveBookings.resx">
+      <DependentUpon>ApproveBookings.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BookPackages.resx">
       <DependentUpon>BookPackages.cs</DependentUpon>

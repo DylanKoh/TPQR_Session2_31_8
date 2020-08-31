@@ -112,6 +112,7 @@
             this.btnApproveBookings.TabIndex = 12;
             this.btnApproveBookings.Text = "Approve Sponsorship Bookings";
             this.btnApproveBookings.UseVisualStyleBackColor = true;
+            this.btnApproveBookings.Click += new System.EventHandler(this.btnApproveBookings_Click);
             // 
             // btnViewSummary
             // 
