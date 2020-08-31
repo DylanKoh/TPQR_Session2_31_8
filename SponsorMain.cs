@@ -10,11 +10,13 @@ using System.Windows.Forms;
 
 namespace TPQR_Session2_31_8
 {
-    public partial class Form1 : Form
+    public partial class SponsorMain : Form
     {
-        public Form1()
+        User _user;
+        public SponsorMain(User user)
         {
             InitializeComponent();
+            _user = user;
         }
     }
 }

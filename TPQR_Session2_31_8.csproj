@@ -61,11 +61,23 @@
     <Compile Include="Booking.cs">
       <DependentUpon>Session2Model.tt</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="CreateForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="CreateForm.Designer.cs">
+      <DependentUpon>CreateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerMain.Designer.cs">
+      <DependentUpon>ManagerMain.cs</DependentUpon>
     </Compile>
     <Compile Include="Package.cs">
       <DependentUpon>Session2Model.tt</DependentUpon>
@@ -87,12 +99,21 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Session2Model.edmx</DependentUpon>
     </Compile>
+    <Compile Include="SponsorMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SponsorMain.Designer.cs">
+      <DependentUpon>SponsorMain.cs</DependentUpon>
+    </Compile>
     <Compile Include="User.cs">
       <DependentUpon>Session2Model.tt</DependentUpon>
     </Compile>
     <Compile Include="User_Type.cs">
       <DependentUpon>Session2Model.tt</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
