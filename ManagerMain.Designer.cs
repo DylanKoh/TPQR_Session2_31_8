@@ -102,6 +102,7 @@
             this.btnAddPackages.TabIndex = 11;
             this.btnAddPackages.Text = "Add Sponsorship Pacakges";
             this.btnAddPackages.UseVisualStyleBackColor = true;
+            this.btnAddPackages.Click += new System.EventHandler(this.btnAddPackages_Click);
             // 
             // btnApproveBookings
             // 
@@ -144,7 +145,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "ManagerMain";
             this.Text = "Manager Main";
             this.panel1.ResumeLayout(false);
