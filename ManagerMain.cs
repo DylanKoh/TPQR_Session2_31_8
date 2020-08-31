@@ -16,5 +16,19 @@ namespace TPQR_Session2_31_8
         {
             InitializeComponent();
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            Hide();
+            (new LoginForm()).ShowDialog();
+            Close();
+        }
+
+        private void btnViewPackages_Click(object sender, EventArgs e)
+        {
+            Hide();
+            (new ViewPackages()).ShowDialog();
+            Close();
+        }
     }
 }
