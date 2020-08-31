@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace TPQR_Session2_31_8
 {
-    public partial class SponsorMain : Form
+    public partial class UpdateBookings : Form
     {
         User _user;
-        public SponsorMain(User user)
+        public UpdateBookings(User user)
         {
             InitializeComponent();
             _user = user;
@@ -22,21 +22,7 @@ namespace TPQR_Session2_31_8
         private void btnBack_Click(object sender, EventArgs e)
         {
             Hide();
-            (new LoginForm()).ShowDialog();
-            Close();
-        }
-
-        private void btnBook_Click(object sender, EventArgs e)
-        {
-            Hide();
-            (new BookPackages(_user)).ShowDialog();
-            Close();
-        }
-
-        private void btnUpdate_Click(object sender, EventArgs e)
-        {
-            Hide();
-            (new UpdateBookings(_user)).ShowDialog();
+            (new SponsorMain(_user)).ShowDialog();
             Close();
         }
     }

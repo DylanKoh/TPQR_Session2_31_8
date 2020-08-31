@@ -1,6 +1,6 @@
 ﻿namespace TPQR_Session2_31_8
 {
-    partial class SponsorMain
+    partial class BookPackages
     {
         /// <summary>
         /// Required designer variable.
@@ -32,9 +32,6 @@
             this.btnBack = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btnBook = new System.Windows.Forms.Button();
-            this.btnUpdate = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -48,7 +45,7 @@
             this.panel1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(997, 104);
-            this.panel1.TabIndex = 4;
+            this.panel1.TabIndex = 5;
             // 
             // btnBack
             // 
@@ -76,60 +73,26 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.Maroon;
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 467);
+            this.panel2.Location = new System.Drawing.Point(0, 424);
             this.panel2.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(997, 76);
-            this.panel2.TabIndex = 5;
+            this.panel2.TabIndex = 6;
             // 
-            // btnBook
-            // 
-            this.btnBook.Location = new System.Drawing.Point(353, 223);
-            this.btnBook.Name = "btnBook";
-            this.btnBook.Size = new System.Drawing.Size(291, 62);
-            this.btnBook.TabIndex = 6;
-            this.btnBook.Text = "Book Sponsorship Packages";
-            this.btnBook.UseVisualStyleBackColor = true;
-            this.btnBook.Click += new System.EventHandler(this.btnBook_Click);
-            // 
-            // btnUpdate
-            // 
-            this.btnUpdate.Location = new System.Drawing.Point(353, 329);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(291, 69);
-            this.btnUpdate.TabIndex = 7;
-            this.btnUpdate.Text = "Update Sponsorship Bookings";
-            this.btnUpdate.UseVisualStyleBackColor = true;
-            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Verdana", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(348, 134);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(296, 29);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "Sponsorship Main Menu";
-            // 
-            // SponsorMain
+            // BookPackages
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(997, 543);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.btnUpdate);
-            this.Controls.Add(this.btnBook);
+            this.ClientSize = new System.Drawing.Size(997, 500);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.Name = "SponsorMain";
-            this.Text = "Sponsorship Main Menu";
+            this.Name = "BookPackages";
+            this.Text = "Book Packages";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -139,8 +102,5 @@
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button btnBook;
-        private System.Windows.Forms.Button btnUpdate;
-        private System.Windows.Forms.Label label2;
     }
 }
